@@ -16,7 +16,9 @@ import { faUser,faLock } from '@fortawesome/free-solid-svg-icons';
 import {
   faFacebook,
   faTwitter,
+  faInstagram
 } from '@fortawesome/free-brands-svg-icons';
+import { AccesoComponent } from './views/acceso/acceso.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import {
     HomeComponent,
     CabeceraComponent,
     MenuComponent,
-    FooterComponent
+    FooterComponent,
+    AccesoComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +44,8 @@ export class AppModule {
       faUser,
       faLock,
       faFacebook,
-      faTwitter
+      faTwitter,
+      faInstagram
     );
   }
 
