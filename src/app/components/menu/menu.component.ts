@@ -11,5 +11,5 @@ export class MenuComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  public isMenuCollapsed = true;
 }

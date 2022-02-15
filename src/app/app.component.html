@@ -1,14 +1,14 @@
-<div class="container-fluid" [ngStyle]="{'padding-right': '0px', 'padding-left': '0px'}">
+<div class="container-fluid p-0">
 <!-- cabecera -->
 <app-cabecera></app-cabecera>
 <!-- menu -->
 <app-menu></app-menu>
 </div>
-<div class="container">
+<div class="container" [ngStyle]="{'background-color': '#ffffff'}">
 <!-- contenido -->
 <router-outlet></router-outlet>
 </div>
-<div class="container-fluid" [ngStyle]="{'padding-right': '0px', 'padding-left': '0px'}">
+<div class="container-fluid p-0">
 <!-- pie -->
 <app-footer></app-footer>
 </div>

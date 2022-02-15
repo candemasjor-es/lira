@@ -16,7 +16,12 @@ import { faUser,faLock } from '@fortawesome/free-solid-svg-icons';
 import {
   faFacebook,
   faTwitter,
+  faInstagram,
+  faLinkedin
 } from '@fortawesome/free-brands-svg-icons';
+import { AccesoComponent } from './views/acceso/acceso.component';
+import { GravatarModule } from 'ngx-gravatar'
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +29,16 @@ import {
     HomeComponent,
     CabeceraComponent,
     MenuComponent,
-    FooterComponent
+    FooterComponent,
+    AccesoComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    GravatarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -41,7 +49,9 @@ export class AppModule {
       faUser,
       faLock,
       faFacebook,
-      faTwitter
+      faTwitter,
+      faInstagram,
+      faLinkedin
     );
   }
 
