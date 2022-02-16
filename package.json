@@ -6,7 +6,13 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
+<<<<<<< HEAD
     "test": "ng test"
+=======
+    "test": "ng test",
+    "deploy": "ng deploy --base-href=/lira/"
+
+>>>>>>> e611db68aff05bf797b52ee8b1016b706d7da278
   },
   "private": true,
   "dependencies": {
@@ -49,6 +55,5 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
     "typescript": "~4.5.2"
-  },
-  "deploy": "ng build --prod --base-href=/lira/"
+  }
 }
