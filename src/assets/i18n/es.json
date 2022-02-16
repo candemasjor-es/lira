@@ -1,0 +1,14 @@
+{
+  "menu": {
+    "inicio.texto" : "Inicio",
+    "escuela.texto" : "Escuela",
+    "bandas.texto" : "Bandas",
+    "eventos.texto" : "Eventos",
+    "contacto.texto" : "Contacto"
+  },
+  "login" : {
+    "acceso.texto" : "Acceso",
+    "usuario.texto" : "Usuario",
+    "contrasena.texto" : "Contraseña"
+  }
+}

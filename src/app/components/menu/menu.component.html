@@ -5,19 +5,19 @@
   <div class="collapse navbar-collapse" [(ngbCollapse)]="isMenuCollapsed">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a [routerLink]="['home']" class="nav-link">Inicio</a>
+        <a [routerLink]="['home']" class="nav-link">{{ 'menu.inicio.texto' | translate }}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" >Escuela</a>
+        <a class="nav-link" >{{ 'menu.escuela.texto' | translate }}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link">Bandas</a>
+        <a class="nav-link">{{ 'menu.bandas.texto' | translate }}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link">Eventos</a>
+        <a class="nav-link">{{ 'menu.eventos.texto' | translate }}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link">Contáctanos</a>
+        <a class="nav-link">{{ 'menu.contacto.texto' | translate }}</a>
       </li>
     </ul>
   </div>

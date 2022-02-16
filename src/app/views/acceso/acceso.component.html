@@ -1,17 +1,17 @@
-<h1 class="text-center p-5 ">Acceso</h1>
+<h1 class="text-center p-5 ">{{ 'login.acceso.texto' | translate }}</h1>
 <main class="form-signin p-4 mx-auto" [ngStyle]="{'width': '500px'}">
     <form>
         <div class="text-center">
             
     </div>
       <div class="form-floating p-4">
-        <input type="text" class="form-control" id="floatingInput" placeholder="Usuario">
+        <input type="text" class="form-control" id="floatingInput" placeholder="{{ 'login.usuario.texto' | translate }}">
       </div>
       <div class="form-floating p-4">
-        <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseño">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="{{ 'login.contrasena.texto' | translate }}">
       </div>
       <div class="form-floating p-4">
-      <button class="w-100 btn btn-lg btn-primary" type="submit">Acceso</button>
+      <button class="w-100 btn btn-lg btn-primary" type="submit">{{ 'login.acceso.texto' | translate }}</button>
     </div>
     </form>
   </main>

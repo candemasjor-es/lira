@@ -22,6 +22,13 @@ import {
 import { AccesoComponent } from './views/acceso/acceso.component';
 import { GravatarModule } from 'ngx-gravatar'
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 
 @NgModule({
   declarations: [
@@ -38,7 +45,17 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     AppRoutingModule,
     NgbModule,
     FontAwesomeModule,
-    GravatarModule
+    GravatarModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: (http: HttpClient) => {
+          return new TranslateHttpLoader(http);
+        },
+        deps: [ HttpClient ]
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
