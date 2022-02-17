@@ -10,5 +10,16 @@
     "acceso.texto" : "Acceso",
     "usuario.texto" : "Usuario",
     "contrasena.texto" : "Contraseña"
+  },
+  "contacto" : {
+    "contacto.texto" : "Contacto",
+    "nombre.texto" : "Nombre",
+    "apellidos.texto" : "Apellidos",
+    "email.texto" : "Corre electrónico",
+    "telefono.texto" : "Telefono",
+    "asunto.texto" : "Asunto",
+    "mensaje.texto" : "Mensaje",
+    "enviar.texto" : "Enviar",
+    "limpiar.texto" : "Limpiar"
   }
 }

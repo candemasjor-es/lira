@@ -14,10 +14,7 @@ import {
 } from '@fortawesome/angular-fontawesome';
 import { faUser,faLock } from '@fortawesome/free-solid-svg-icons';
 import {
-  faFacebook,
-  faTwitter,
-  faInstagram,
-  faLinkedin
+  faFacebook
 } from '@fortawesome/free-brands-svg-icons';
 import { AccesoComponent } from './views/acceso/acceso.component';
 import { GravatarModule } from 'ngx-gravatar'
@@ -25,6 +22,9 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { EscuelaComponent } from './views/escuela/escuela.component';
+import { BandasComponent } from './views/bandas/bandas.component';
+import { ContactoComponent } from './views/contacto/contacto.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -38,7 +38,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     MenuComponent,
     FooterComponent,
     AccesoComponent,
-    CarouselComponent
+    CarouselComponent,
+    EscuelaComponent,
+    BandasComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,
@@ -65,10 +68,7 @@ export class AppModule {
     library.addIcons(
       faUser,
       faLock,
-      faFacebook,
-      faTwitter,
-      faInstagram,
-      faLinkedin
+      faFacebook
     );
   }
 

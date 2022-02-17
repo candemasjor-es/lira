@@ -10,5 +10,16 @@
     "acceso.texto" : "Accés",
     "usuario.texto" : "Usuari",
     "contrasena.texto" : "Contrasenya"
+  },
+  "contacto" : {
+    "contacto.texto" : "Contacte",
+    "nombre.texto" : "Nom",
+    "apellidos.texto" : "Cognoms",
+    "email.texto" : "Correu electrònic",
+    "telefono.texto" : "Telèfon",
+    "asunto.texto" : "Assumpte",
+    "mensaje.texto" : "Missatge",
+    "enviar.texto" : "Enviar",
+    "limpiar.texto" : "Netejar"
   }
 }

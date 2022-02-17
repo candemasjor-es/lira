@@ -1,0 +1,37 @@
+<h1 class="text-center p-2 ">{{ 'contacto.contacto.texto' | translate }}</h1>
+<main class="form-signin p-4 mx-auto" [ngStyle]="{'width': '500px'}">
+    <form>
+
+            <div class="form-floating">
+                <label for="validarNombre">{{ 'contacto.nombre.texto' | translate }}:<span class="red">*</span></label>
+                <input type="text" class="form-control" id="validarNombre" name="validarNombre" required>
+            </div>
+            <div class="form-floating">
+                <label for="validarApellidos">{{ 'contacto.apellidos.texto' | translate }}:<span class="red">*</span></label>
+                <input type="text" class="form-control" id="validarApellidos" name="validarApellidos" required>
+            </div>
+            <div class="form-floating">
+                <label for="validarEmail">{{ 'contacto.email.texto' | translate }}:<span class="red">*</span></label>
+                <input type="email" class="form-control" id="validarEmail" name="validarEmail" required>
+            </div>
+            <div class="form-floating">
+                <label for="validarTelefono">{{ 'contacto.telefono.texto' | translate }}:</label>
+                <input type="number" class="form-control" id="validarTelefono" name="validarTelefono" max="999999999">
+            </div>
+            <div class="form-floating">
+                <label for="validarAsunto">{{ 'contacto.asunto.texto' | translate }}:</label>
+                <input type="text" class="form-control" id="validarAsunto" name="validarAsunto" required>
+            </div>
+    
+        <div class="form-floating">
+            <label for="validationMensaje">{{ 'contacto.mensaje.texto' | translate }}:<span class="red">*</span></label>
+            <textarea class="form-control" id="validationMensaje" name="validationMensaje" rows="3" min="25" required></textarea>
+        </div>
+    
+        <div class="form-floating mb-10">
+            <button class="btn btn-primary" type="submit" name="submit">{{ 'contacto.enviar.texto' | translate }}</button>
+            <button class="btn btn-success" type="reset" name="reset">{{ 'contacto.limpiar.texto' | translate }}</button>
+        </div>
+    
+    </form>
+  </main>

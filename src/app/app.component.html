@@ -3,8 +3,18 @@
 <div class="contenedor bg-secondary p-0 m-0">
     <div class="row justify-content-end">
     <div class="col-auto">
-      <button [ngClass]="{'active': activeLang == 'es'}" (click)="cambiarLenguaje('es')">Español</button>
-      <button [ngClass]="{'active': activeLang == 'va'}" (click)="cambiarLenguaje('va')">Valencia</button>
+      <button [ngStyle]="{
+        'border':'none',
+        'background-color':'transparent',
+        'width':'35px',
+        'height':'35px'
+      }" [ngClass]="{'active': activeLang == 'es'}" (click)="cambiarLenguaje('es')"><img src="./assets/images/es.png" width="35px" alt=""></button>
+      <button [ngStyle]="{
+        'border':'none',
+        'background-color':'transparent',
+        'width':'55px',
+        'height':'35px'
+      }"[ngClass]="{'active': activeLang == 'va'}" (click)="cambiarLenguaje('va')"><img src="./assets/images/va.png" width="35px" alt=""></button>
     </div>
     </div>
   </div>

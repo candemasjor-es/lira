@@ -8,16 +8,16 @@
         <a [routerLink]="['home']" class="nav-link">{{ 'menu.inicio.texto' | translate }}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" >{{ 'menu.escuela.texto' | translate }}</a>
+        <a [routerLink]="['escuela']" class="nav-link" >{{ 'menu.escuela.texto' | translate }}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link">{{ 'menu.bandas.texto' | translate }}</a>
+        <a [routerLink]="['bandas']"  class="nav-link">{{ 'menu.bandas.texto' | translate }}</a>
       </li>
       <li class="nav-item">
         <a class="nav-link">{{ 'menu.eventos.texto' | translate }}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link">{{ 'menu.contacto.texto' | translate }}</a>
+        <a [routerLink]="['contacto']"  class="nav-link">{{ 'menu.contacto.texto' | translate }}</a>
       </li>
     </ul>
   </div>

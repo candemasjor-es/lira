@@ -19,6 +19,6 @@ export class CabeceraComponent implements OnInit {
   }
   logotipo:any  = '../assets/images/logotipolira.png';
   acceso() {
-    return this.Router.url === '/home';
+    return this.Router.url === '/home' || this.Router.url === '/escuela' || this.Router.url === '/bandas' || this.Router.url === '/contacto';
   }
 }

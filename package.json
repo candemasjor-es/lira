@@ -6,13 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-<<<<<<< HEAD
-    "test": "ng test"
-=======
     "test": "ng test",
     "deploy": "ng deploy --base-href=/lira/"
-
->>>>>>> e611db68aff05bf797b52ee8b1016b706d7da278
   },
   "private": true,
   "dependencies": {
