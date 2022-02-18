@@ -1,14 +1,32 @@
-<div class="container-fluid" [ngStyle]="{'padding-right': '0px', 'padding-left': '0px'}">
-    <!-- cabecera -->
-    <app-cabecera></app-cabecera>
-    <!-- menu -->
-    <app-menu></app-menu>
+<div class="container-fluid p-0 m-0">
+<!-- cabecera -->
+<div class="contenedor bg-secondary p-0 m-0">
+    <div class="row justify-content-end">
+    <div class="col-auto">
+      <button [ngStyle]="{
+        'border':'none',
+        'background-color':'transparent',
+        'width':'35px',
+        'height':'35px'
+      }" [ngClass]="{'active': activeLang == 'es'}" (click)="cambiarLenguaje('es')"><img src="./assets/images/es.png" width="35px" alt=""></button>
+      <button [ngStyle]="{
+        'border':'none',
+        'background-color':'transparent',
+        'width':'55px',
+        'height':'35px'
+      }"[ngClass]="{'active': activeLang == 'va'}" (click)="cambiarLenguaje('va')"><img src="./assets/images/va.png" width="35px" alt=""></button>
     </div>
-    <div class="container">
-        <!-- contenido -->
+    </div>
+  </div>
+<app-cabecera></app-cabecera>
+<!-- menu -->
+<app-menu></app-menu>
+</div>
+<div class="container" [ngStyle]="{'background-color': '#ffffff'}">
+<!-- contenido -->
 <router-outlet></router-outlet>
-    </div>
-<div class="container-fluid" [ngStyle]="{'padding-right': '0px', 'padding-left': '0px'}">
+</div>
+<div class="container-fluid p-0">
 <!-- pie -->
 <app-footer></app-footer>
 </div>

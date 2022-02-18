@@ -1,0 +1,25 @@
+{
+  "menu": {
+    "inicio.texto" : "Inicio",
+    "escuela.texto" : "Escuela",
+    "bandas.texto" : "Bandas",
+    "eventos.texto" : "Eventos",
+    "contacto.texto" : "Contacto"
+  },
+  "login" : {
+    "acceso.texto" : "Acceso",
+    "email.texto" : "Corre electrónico",
+    "contrasena.texto" : "Contraseña"
+  },
+  "contacto" : {
+    "contacto.texto" : "Contacto",
+    "nombre.texto" : "Nombre",
+    "apellidos.texto" : "Apellidos",
+    "email.texto" : "Corre electrónico",
+    "telefono.texto" : "Telefono",
+    "asunto.texto" : "Asunto",
+    "mensaje.texto" : "Mensaje",
+    "enviar.texto" : "Enviar",
+    "limpiar.texto" : "Limpiar"
+  }
+}

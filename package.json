@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "ng deploy --base-href=/lira/"
   },
   "private": true,
   "dependencies": {
@@ -25,8 +26,17 @@
     "@fortawesome/free-regular-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@ng-bootstrap/ng-bootstrap": "^11.0.0",
+    "@ngx-translate/core": "^14.0.0",
+    "@ngx-translate/http-loader": "^7.0.0",
+    "@types/jquery": "^3.5.13",
     "bootstrap": "^4.6.0",
+    "jquery": "^3.6.0",
+    "model": "^6.0.1",
+    "ng": "^0.0.0",
+    "ngx-cookie-service": "^13.1.2",
+    "ngx-gravatar": "^11.0.0",
     "rxjs": "~7.5.0",
+    "save": "^2.4.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },

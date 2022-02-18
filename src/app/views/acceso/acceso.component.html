@@ -1,20 +1,29 @@
- <h1 class="text-center">Acceso</h1>
- <div class="col text-center">
- <form class="form-signin" [ngStyle]="{
-    'width': '100%',
-    'max-width': '330px',
-    'margin': '0 auto',
-    'padding': '15px'
- }">
-    <label for="inputEmail" class="sr-only">Usuario</label>
-    <input type="email" id="inputEmail" class="form-control" placeholder="Usuario" required autofocus>
-    <label for="inputPassword" class="sr-only">Contraseña</label>
-    <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
-    <div class="checkbox mb-3">
-      <label>
-        <input type="checkbox" value="remember-me"> Recuérdame
-      </label>
+<h1 class="text-center p-5 ">{{ 'login.acceso.texto' | translate }}</h1>
+<main class="form-signin p-4 mx-auto" [ngStyle]="{'width': '500px'}">
+    <form method="post">
+        <div class="text-center">
+            
     </div>
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Acceso</button>
-  </form>
-</div>
+      <div class="form-floating p-4">
+        <input
+        type="email" 
+        [(ngModel)]="email"
+        name="email"
+        class="form-control" 
+        placeholder="{{ 'login.email.texto' | translate }}"
+        required="required">
+      </div>
+      <div class="form-floating p-4">
+        <input 
+        type="password" 
+        [(ngModel)]="password" 
+        name="password"
+        class="form-control" 
+        placeholder="{{ 'login.contrasena.texto' | translate }}"
+        required="required">
+      </div>
+      <div class="form-floating p-4">
+      <button class="w-100 btn btn-lg btn-primary" type="submit" (click)="login()">{{ 'login.acceso.texto' | translate }}</button>
+    </div>
+    </form>
+  </main>

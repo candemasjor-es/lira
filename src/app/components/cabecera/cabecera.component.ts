@@ -9,17 +9,16 @@ import { Router } from '@angular/router';
 export class CabeceraComponent implements OnInit {
 
   constructor(
-    private router: Router
+    private Router: Router,
   ) { }
- 
 
   ngOnInit(): void {
   }
   logout(){
-    this.router.navigate(['/acceso']);
+    this.Router.navigate(['/acceso']);
   }
   logotipo:any  = '../assets/images/logotipolira.png';
   acceso() {
-    return this.router.url === '/home';
+    return this.Router.url === '/home' || this.Router.url === '/escuela' || this.Router.url === '/bandas' || this.Router.url === '/contacto';
   }
 }
