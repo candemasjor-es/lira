@@ -25,6 +25,10 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { EscuelaComponent } from './views/escuela/escuela.component';
 import { BandasComponent } from './views/bandas/bandas.component';
 import { ContactoComponent } from './views/contacto/contacto.component';
+import { MainComponent } from './views/main/main.component';
+import { FormsModule } from '@angular/forms';
+import { CookieService } from 'ngx-cookie-service';
+import { EventosComponent } from './views/eventos/eventos.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -41,7 +45,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     CarouselComponent,
     EscuelaComponent,
     BandasComponent,
-    ContactoComponent
+    ContactoComponent,
+    MainComponent,
+    EventosComponent
   ],
   imports: [
     BrowserModule,
@@ -50,6 +56,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     FontAwesomeModule,
     GravatarModule,
     HttpClientModule,
+    FormsModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -60,7 +67,7 @@ export function HttpLoaderFactory(http: HttpClient) {
       }
     })
   ],
-  providers: [],
+  providers: [CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

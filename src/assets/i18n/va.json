@@ -8,7 +8,7 @@
   },
   "login" : {
     "acceso.texto" : "Accés",
-    "usuario.texto" : "Usuari",
+    "email.texto" : "Correu electrònic",
     "contrasena.texto" : "Contrasenya"
   },
   "contacto" : {

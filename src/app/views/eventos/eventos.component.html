@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-4 col-md-3 p-4" *ngFor='let artista of eventos'>
+    <div class="card" >
+      <div class="album-thumbnails" [ngStyle]="{
+        'position': 'relative',
+        'height': '500px',
+        'overflow': 'hidden'
+      }">
+      <img [ngStyle]="{
+        'height': '400px'
+      }" class="card-img-top img-thumbnail" src="http://13.36.28.36:8000/uploads/noticia_images/{{artista.imagen}}"
+        alt="Card image cap">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">{{artista.titulo}} {{artista.fecha}}</h5>
+        <p class="card-text">{{artista.descripcion}}</p>
+      </div>
+    </div>
+  </div>
+</div>
