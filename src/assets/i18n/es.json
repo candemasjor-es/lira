@@ -21,5 +21,14 @@
     "mensaje.texto" : "Mensaje",
     "enviar.texto" : "Enviar",
     "limpiar.texto" : "Limpiar"
+  },
+  "admin" : {
+    "admin.texto" : "Administración",
+    "usuarios.texto" : "Usuarios",
+    "escuela.texto" : "Escuela",
+    "bandas.texto" : "Bandas",
+    "eventos.texto" : "Eventos",
+    "contacto.texto" : "Contacto",
+    "salir.texto" : "Salir"
   }
 }

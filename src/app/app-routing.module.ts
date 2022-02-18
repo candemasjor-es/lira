@@ -7,6 +7,7 @@ import { BandasComponent } from './views/bandas/bandas.component';
 import { ContactoComponent } from './views/contacto/contacto.component';
 import { MainComponent } from './views/main/main.component';
 import { EventosComponent } from './views/eventos/eventos.component';
+import { AdminComponent } from './views/admin/admin.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'contacto', component: ContactoComponent },
   { path: 'main', component: MainComponent },
   { path: 'eventos', component: EventosComponent },
+  { path: 'admin', component: AdminComponent },
 ];
 
 @NgModule({

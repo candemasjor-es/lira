@@ -21,5 +21,14 @@
     "mensaje.texto" : "Missatge",
     "enviar.texto" : "Enviar",
     "limpiar.texto" : "Netejar"
+  },
+  "admin" : {
+    "admin.texto" : "Administració",
+    "usuarios.texto" : "Usuaris",
+    "escuela.texto" : "Escola",
+    "bandas.texto" : "Bandes",
+    "eventos.texto" : "Esdeveniments",
+    "contacto.texto" : "Contacte",
+    "salir.texto" : "Eixir"
   }
 }

@@ -21,6 +21,10 @@ export class AccesoComponent implements OnInit {
     this.userService.login(user).subscribe( data => {
       this.userService.setToken(data.token);
       this.router.navigateByUrl('/main');
-  });
+  },
+  error => {
+    console.log(error);
+  }
+  );
   }
 }

@@ -29,6 +29,7 @@ import { MainComponent } from './views/main/main.component';
 import { FormsModule } from '@angular/forms';
 import { CookieService } from 'ngx-cookie-service';
 import { EventosComponent } from './views/eventos/eventos.component';
+import { AdminComponent } from './views/admin/admin.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -47,7 +48,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     BandasComponent,
     ContactoComponent,
     MainComponent,
-    EventosComponent
+    EventosComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
