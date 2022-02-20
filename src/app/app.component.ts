@@ -4,6 +4,7 @@ import { faFortAwesomeAlt } from '@fortawesome/free-brands-svg-icons';
 import * as $ from 'jquery';
 import { TranslateService } from '@ngx-translate/core';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

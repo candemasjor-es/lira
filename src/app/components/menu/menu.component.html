@@ -20,7 +20,7 @@
         <a [routerLink]="['contacto']"  class="nav-link">{{ 'menu.contacto.texto' | translate }}</a>
       </li>
       <li class="nav-item">
-        <a [routerLink]="['admin']"  class="nav-link">{{ 'admin.admin.texto' | translate }}</a>
+        <a *ngxPermissionsOnly="'ROLE_ADMIN'" [routerLink]="['admin']"  class="nav-link">{{ 'admin.admin.texto' | translate }}</a>
       </li>
     </ul>
   </div>

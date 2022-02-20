@@ -8,7 +8,7 @@ import { CookieService } from 'ngx-cookie-service';
   providedIn: 'root'
 })
 export class UsersService {
-
+ 
   constructor(private http: HttpClient, private cookies: CookieService) { }
   login(user: any): Observable<any> {
     return this.http.post("http://13.36.28.36:8000/api/login", user);
@@ -19,4 +19,7 @@ export class UsersService {
   getToken() {
     return this.cookies.get("token");
   }
+  logout() {
+    this.cookies.delete("token");
+}
 }

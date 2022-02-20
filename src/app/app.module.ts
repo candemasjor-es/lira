@@ -30,7 +30,7 @@ import { FormsModule } from '@angular/forms';
 import { CookieService } from 'ngx-cookie-service';
 import { EventosComponent } from './views/eventos/eventos.component';
 import { AdminComponent } from './views/admin/admin.component';
-
+import { NgxPermissionsModule } from 'ngx-permissions';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
@@ -59,6 +59,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     GravatarModule,
     HttpClientModule,
     FormsModule,
+    NgxPermissionsModule.forRoot(),
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -68,6 +69,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         deps: [ HttpClient ]
       }
     })
+    
   ],
   providers: [CookieService],
   bootstrap: [AppComponent]
@@ -79,6 +81,8 @@ export class AppModule {
       faLock,
       faFacebook
     );
+
+
   }
 
  }

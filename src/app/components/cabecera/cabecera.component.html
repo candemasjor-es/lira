@@ -4,7 +4,7 @@
             <h1 class="text-light">LIRA CARCAIXENTINA</h1>
         </div>
         <div class="col-auto  align-self-center" *ngIf="acceso()">
-            <button type="button" class="btn btn-primary" (click)="logout()"><fa-icon [icon]="['fas', 'lock']"></fa-icon> {{ 'login.acceso.texto' | translate }}</button>
+            <button type="button" class="btn btn-primary" (click)="login()"><fa-icon [icon]="['fas', 'lock']"></fa-icon> {{ 'login.acceso.texto' | translate }}</button>
         </div>
     </div>
 </header>

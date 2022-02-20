@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {JwtHelperService} from '@auth0/angular-jwt';
+import {NgxPermissionsService, NgxRolesService} from 'ngx-permissions';
 
 @Component({
   selector: 'app-admin',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminComponent implements OnInit {
 
-  constructor() { }
+  constructor(private rolesService: NgxRolesService,
+    private permissionsService: NgxPermissionsService) {
+}
 
   ngOnInit(): void {
   }
-
+ 
 }
