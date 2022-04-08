@@ -6,5 +6,6 @@
         <div class="col-auto  align-self-center" *ngIf="acceso()">
             <button type="button" class="btn btn-primary" (click)="login()"><fa-icon [icon]="['fas', 'lock']"></fa-icon> {{ 'login.acceso.texto' | translate }}</button>
         </div>
+        <ng-template #elseBlock> <button type="button" class="btn btn-primary" (click)="login()"><fa-icon [icon]="['fas', 'lock']"></fa-icon> {{ 'login.salir.texto' | translate }}</button></ng-template>
     </div>
 </header>

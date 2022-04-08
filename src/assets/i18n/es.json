@@ -9,7 +9,8 @@
   "login" : {
     "acceso.texto" : "Acceso",
     "email.texto" : "Corre electrónico",
-    "contrasena.texto" : "Contraseña"
+    "contrasena.texto" : "Contraseña",
+    "salir.texto" : "Salir"
   },
   "contacto" : {
     "contacto.texto" : "Contacto",
